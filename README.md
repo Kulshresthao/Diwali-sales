@@ -1,16 +1,14 @@
 1. Project Overview & Problem Statement
-The Problem
+**The Problem**
 During the Diwali festive season, retail companies encounter significant increases in both traffic and sales volume. However, in the absence of effective data tracking, businesses confront several challenges:
-
 They lack clarity on who their main target audience is (age, gender, location).
 They find it difficult to determine which products are in high demand, resulting in stockouts or excess inventory.
 They overlook chances to enhance customer experience and maximize conversion rates.
 
-The Objective
+**The Objective**
 To conduct Exploratory Data Analysis (EDA) on retail holiday data to uncover customer purchasing patterns, assess regional performance, identify the most lucrative consumer demographics, and improve inventory management.
-Python Code Solution (Step-by-Step)
+**Python Code Solution (Step-by-Step)**
 This project utilizes standard data analysis libraries: pandas, numpy, matplotlib, and seaborn.
-
 Step 1: Environment Setup & Data Loading
 Python
 import numpy as np 
@@ -65,10 +63,8 @@ Python
 sales_state = df.groupby(['State'], as_index=False)['Amount'].sum().sort_values(by='Amount', ascending=False).head(5)
 sns.set(rc={'figure.figsize':(10,5)})
 
-
-
-3. Advantages & Disadvantages of the Project
-Advantages
+**3. Advantages & Disadvantages of the Project**
+**Advantage**
 High Scannability: Offers immediate visual summaries of extensive data tables through charts.
 
 Actionable Insights: Directly assists corporate retail planners with targeted advertisements and intelligent inventory decisions.
@@ -77,7 +73,7 @@ Low Computational Overhead: Since it is based solely on analytical mathematics/s
 
 Perfect Beginner Framework: Instructs on essential foundational skills—managing encoding errors, cleaning null values, utilizing .groupby(), and selecting appropriate visual tools.
 
-Disadvantages
+**Disadvantages**
 Static / Retrospective Analysis: Describes what happened in previous sales cycles, but lacks Machine Learning capabilities to dynamically predict future trends.
 
 Vulnerable to Incomplete Records: Eliminating null rows (dropna()) may unintentionally remove valid secondary variables if any single field is empty.
